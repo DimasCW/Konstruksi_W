@@ -1,0 +1,415 @@
+/* ----- Variabel & Reset Dasar ----- */
+:root {
+    --primary-color: #F39C12; /* Warna Emas/Kuning untuk Aksen */
+    --secondary-color: #2C3E50; /* Warna Biru Tua untuk Teks & Latar */
+    --light-color: #ECF0F1; /* Warna Putih Gading untuk Latar Terang */
+    --dark-color: #34495E; /* Warna Biru Abu-abu */
+    --text-color: #555;
+    --white-color: #ffffff;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* ----- Utilitas & Komponen Umum ----- */
+.section {
+    padding: 80px 0;
+}
+
+.section-light {
+    background-color: var(--light-color);
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 10px auto 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    margin-left: 15px;
+}
+
+.btn-secondary:hover {
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+/* ----- Header & Navigasi ----- */
+header {
+    background-color: rgba(44, 62, 80, 0.9);
+    backdrop-filter: blur(5px);
+    color: var(--white-color);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: var(--primary-color);
+}
+
+.btn-nav {
+    background-color: var(--primary-color);
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.btn-nav:hover {
+    background-color: #e67e22;
+    color: var(--white-color);
+}
+
+/* ----- Bagian Hero ----- */
+.hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+    height: 90vh;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* ----- Bagian Layanan ----- */
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.layanan-card {
+    background-color: var(--white-color);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.layanan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.layanan-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.layanan-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+/* ----- Gaya untuk Bagian Video Desain ----- */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.video-item {
+    position: relative;
+    padding-bottom: 56.25%; /* Rasio 16:9 untuk video widescreen */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.video-item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ----- Bagian Mengapa Memilih Kami ----- */
+.mengapa-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.mengapa-item {
+    background: var(--white-color);
+    padding: 25px;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.mengapa-item h4 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* ----- Bagian Galeri Proyek ----- */
+.proyek-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.proyek-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.proyek-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.proyek-item:hover img {
+    transform: scale(1.1);
+}
+
+.proyek-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(44, 62, 80, 0.9), transparent);
+    color: var(--white-color);
+    padding: 40px 20px 20px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.proyek-overlay p {
+    font-weight: 600;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.proyek-item:hover .proyek-overlay p {
+    transform: translateY(0);
+}
+
+/* ----- Bagian Testimoni ----- */
+.testimoni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.testimoni-card {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 5px solid var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+
+.testimoni-card p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimoni-card h4 {
+    color: var(--secondary-color);
+    text-align: right;
+}
+
+/* ----- Bagian CTA ----- */
+.cta-section {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-section h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+.btn-large {
+    font-size: 1.2rem;
+    padding: 15px 40px;
+}
+
+/* ----- Footer ----- */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding-top: 50px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+footer h3 {
+    color: var(--white-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+footer p {
+    opacity: 0.8;
+}
+
+.footer-social a {
+    color: var(--light-color);
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid #4a6278;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* ----- Responsif untuk Mobile & Tablet ----- */
+@media (max-width: 768px) {
+    .section-title { font-size: 2rem; }
+    .hero-content h1 { font-size: 2.5rem; }
+    
+    header .container { flex-direction: column; }
+    nav ul { padding: 15px 0 0; }
+    nav ul li { margin: 0 10px; }
+    
+    .mengapa-grid { grid-template-columns: 1fr; }
+    .testimoni-grid { grid-template-columns: 1fr; }
+    .footer-content { text-align: center; }
+    .footer-content h3 { display: table; margin: 15px auto; }
+}
