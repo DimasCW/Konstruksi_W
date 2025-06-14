@@ -8,156 +8,251 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
     <header>
         <nav class="container">
-            <a href="#" class="logo">Konstruksi Impian</a>
-            <ul>
+            <a href="#" class="logo">
+                <span>Konstruksi Impian</span>
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#layanan">Layanan</a></li>
                 <li><a href="#proyek">Proyek</a></li>
                 <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#harga">Harga</a></li>
                 <li><a href="#kontak" class="btn-nav">Hubungi Kami</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Mewujudkan Rumah Impian Anda, Bata demi Bata.</h1>
-                <p>Jasa konstruksi profesional, terpercaya, dan berkualitas untuk hunian idaman keluarga Anda.</p>
-                <a href="#kontak" class="btn btn-primary">Dapatkan Konsultasi Gratis</a>
-                <a href="#proyek" class="btn btn-secondary">Lihat Proyek Kami</a>
+        <section class="hero" style="background-image: url('/images/hero-banner.jpg'); background-size: cover; background-position: center;">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>Mewujudkan Rumah Impian Anda, Bata demi Bata.</h1>
+                    <p>Jasa konstruksi profesional, terpercaya, dan berkualitas untuk hunian idaman keluarga Anda.</p>
+                    <div class="hero-buttons">
+                        <a href="#kontak" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> Dapatkan Konsultasi Gratis
+                        </a>
+                        <a href="#proyek" class="btn btn-secondary">
+                            <i class="fas fa-images"></i> Lihat Proyek Kami
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Proyek Selesai</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Tahun Pengalaman</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Klien Puas</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="layanan" class="container section">
+        <section id="layanan" class="container section animate-on-scroll">
             <h2 class="section-title">Layanan Profesional Kami</h2>
             <div class="layanan-grid">
                 <div class="layanan-card">
-                    <img src="https://i.ibb.co/6PfZvs1/house-build.png" alt="Ikon Pembangunan Rumah Baru" class="layanan-icon">
+                    <img src="/images/bangun.jpg" alt="Ikon Pembangunan Rumah Baru" class="layanan-icon">
                     <h3>Pembangunan Rumah Baru</h3>
                     <p>Membangun rumah dari nol sesuai desain dan anggaran Anda, dengan jaminan kualitas terbaik.</p>
+                    <ul class="layanan-features">
+                        <li><i class="fas fa-check"></i> Desain Custom</li>
+                        <li><i class="fas fa-check"></i> Material Premium</li>
+                        <li><i class="fas fa-check"></i> Garansi 10 Tahun</li>
+                    </ul>
+                    <a href="#kontak" class="btn-layanan">Konsultasi Sekarang</a>
                 </div>
                 <div class="layanan-card">
-                    <img src="https://i.ibb.co/fHn4Vp9/renovation.png" alt="Ikon Renovasi" class="layanan-icon">
+                    <img src="/images/renovasi.png" alt="Ikon Renovasi" class="layanan-icon">
                     <h3>Renovasi Total & Parsial</h3>
                     <p>Memperbarui dan meningkatkan kualitas bangunan Anda, mulai dari renovasi kecil hingga total.</p>
+                    <ul class="layanan-features">
+                        <li><i class="fas fa-check"></i> Renovasi Struktural</li>
+                        <li><i class="fas fa-check"></i> Perbaikan Interior</li>
+                        <li><i class="fas fa-check"></i> Konsultasi Gratis</li>
+                    </ul>
+                    <a href="#kontak" class="btn-layanan">Konsultasi Sekarang</a>
                 </div>
                 <div class="layanan-card">
-                    <img src="https://i.ibb.co/2d7K12W/architect-design.png" alt="Ikon Desain Arsitektur" class="layanan-icon">
+                    <img src="/images/desain.jpg" alt="Ikon Desain Arsitektur" class="layanan-icon">
                     <h3>Desain Arsitektur & Interior</h3>
                     <p>Menyediakan layanan desain yang fungsional dan estetis untuk memaksimalkan ruang Anda.</p>
+                    <ul class="layanan-features">
+                        <li><i class="fas fa-check"></i> 3D Visualization</li>
+                        <li><i class="fas fa-check"></i> Desain Modern</li>
+                        <li><i class="fas fa-check"></i> Revisi Unlimited</li>
+                    </ul>
+                    <a href="#kontak" class="btn-layanan">Konsultasi Sekarang</a>
                 </div>
             </div>
         </section>
 
-        <section id="video-desain" class="container section">
-            <h2 class="section-title">Visualisasi Desain & Denah</h2>
-            <div class="video-grid">
-                <div class="video-item">
-                    <iframe src="https://www.youtube.com/embed/lebOai_Etmo" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-
-                <div class="video-item">
-                    <iframe src="https://www.youtube.com/embed/TAbCucO3Is0" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-
-                <div class="video-item">
-                    <iframe src="https://www.youtube.com/embed/N0TynHzmN1o" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
-
-        <section id="mengapa" class="section section-light">
+        <!-- <section id="harga" class="section section-light">
             <div class="container">
-                <h2 class="section-title">Mengapa Memilih Kami?</h2>
-                <div class="mengapa-grid">
-                    <div class="mengapa-item">
-                        <h4>Tim Profesional & Berpengalaman</h4>
-                        <p>Dikerjakan oleh tim ahli yang solid dan memiliki pengalaman bertahun-tahun di bidangnya.</p>
+                <h2 class="section-title">Paket Harga Transparan</h2>
+                <div class="harga-grid">
+                    <div class="harga-card">
+                        <div class="harga-header">
+                            <h3>Paket Ekonomis</h3>
+                            <p class="harga">Mulai Rp 2.5 Juta/m²</p>
+                        </div>
+                        <ul class="harga-features">
+                            <li><i class="fas fa-check"></i> Material Standar</li>
+                            <li><i class="fas fa-check"></i> Desain Sederhana</li>
+                            <li><i class="fas fa-check"></i> Garansi 5 Tahun</li>
+                            <li><i class="fas fa-check"></i> Konsultasi Gratis</li>
+                        </ul>
+                        <a href="#kontak" class="btn btn-primary">Pilih Paket</a>
                     </div>
-                    <div class="mengapa-item">
-                        <h4>Material Kualitas Premium</h4>
-                        <p>Kami hanya menggunakan bahan bangunan pilihan untuk hasil yang kokoh dan tahan lama.</p>
+                    <div class="harga-card featured">
+                        <div class="harga-header">
+                            <h3>Paket Premium</h3>
+                            <p class="harga">Mulai Rp 4 Juta/m²</p>
+                            <span class="badge">Terlaris</span>
+                        </div>
+                        <ul class="harga-features">
+                            <li><i class="fas fa-check"></i> Material Premium</li>
+                            <li><i class="fas fa-check"></i> Desain Custom</li>
+                            <li><i class="fas fa-check"></i> Garansi 10 Tahun</li>
+                            <li><i class="fas fa-check"></i> Konsultasi Prioritas</li>
+                        </ul>
+                        <a href="#kontak" class="btn btn-primary">Pilih Paket</a>
                     </div>
-                    <div class="mengapa-item">
-                        <h4>Pengerjaan Tepat Waktu</h4>
-                        <p>Manajemen proyek yang efisien memastikan proyek selesai sesuai jadwal yang disepakati.</p>
-                    </div>
-                     <div class="mengapa-item">
-                        <h4>Harga Transparan & Kompetitif</h4>
-                        <p>Rancangan Anggaran Biaya (RAB) yang detail dan jelas tanpa ada biaya tersembunyi.</p>
+                    <div class="harga-card">
+                        <div class="harga-header">
+                            <h3>Paket Mewah</h3>
+                            <p class="harga">Mulai Rp 6 Juta/m²</p>
+                        </div>
+                        <ul class="harga-features">
+                            <li><i class="fas fa-check"></i> Material Import</li>
+                            <li><i class="fas fa-check"></i> Desain Luxury</li>
+                            <li><i class="fas fa-check"></i> Garansi 15 Tahun</li>
+                            <li><i class="fas fa-check"></i> Konsultasi VIP</li>
+                        </ul>
+                        <a href="#kontak" class="btn btn-primary">Pilih Paket</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-
-        <section id="proyek" class="container section">
+        <section id="proyek" class="container section animate-on-scroll">
             <h2 class="section-title">Galeri Proyek Kami</h2>
+            
             <div class="proyek-grid">
-                <div class="proyek-item">
-                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1974&auto=format&fit=crop" alt="Proyek Rumah Modern Tropis">
+                <div class="proyek-item" data-category="modern">
+                    <img src="/images/modern.jpg" alt="Proyek Rumah Modern Bogor">
                     <div class="proyek-overlay">
-                        <p>Rumah Modern Tropis, Jakarta Selatan</p>
+                        <h4>Rumah Modern</h4>
+                        <p>Cimahpar Bogor</p>
+                        <a href="#" class="btn-proyek">Lihat Detail</a>
                     </div>
                 </div>
-                <div class="proyek-item">
-                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070&auto=format&fit=crop" alt="Proyek Rumah Minimalis">
-                     <div class="proyek-overlay">
-                        <p>Rumah Minimalis Tipe 70, Surabaya</p>
+                <div class="proyek-item" data-category="minimalis">
+                    <img src="/images/minimalis.jpg" alt="Proyek Rumah Minimalis Bogor">
+                    <div class="proyek-overlay">
+                        <h4>Rumah Minimalis</h4>
+                        <p>Cibinong Bogor</p>
+                        <a href="#" class="btn-proyek">Lihat Detail</a>
                     </div>
                 </div>
-                <div class="proyek-item">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Proyek Villa Bali">
-                     <div class="proyek-overlay">
-                        <p>Renovasi Villa, Seminyak Bali</p>
+                <div class="proyek-item" data-category="modern">
+                    <img src="/images/villa.jpg" alt="Proyek Villa Bogor">
+                    <div class="proyek-overlay">
+                        <h4>Villa Mewah</h4>
+                        <p>Cipayung Bogor</p>
+                        <a href="#" class="btn-proyek">Lihat Detail</a>
                     </div>
                 </div>
-                <div class="proyek-item">
-                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2070&auto=format&fit=crop" alt="Proyek Perumahan Cluster">
-                     <div class="proyek-overlay">
-                        <p>Cluster Hunian Asri, Yogyakarta</p>
+                <div class="proyek-item" data-category="minimalis">
+                    <img src="/images/cluster.jpg" alt="Proyek Perumahan Bogor">
+                    <div class="proyek-overlay">
+                        <h4>Cluster Hunian</h4>
+                        <p>Cikeas Bogor</p>
+                        <a href="#" class="btn-proyek">Lihat Detail</a>
                     </div>
                 </div>
-                 <div class="proyek-item">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2070&auto=format&fit=crop" alt="Interior Ruang Keluarga">
-                     <div class="proyek-overlay">
-                        <p>Desain Interior Ruang Keluarga</p>
+                <div class="proyek-item" data-category="modern">
+                    <img src="/images/interior.jpg" alt="Interior Rumah Bogor">
+                    <div class="proyek-overlay">
+                        <h4>Interior Modern</h4>
+                        <p>Bogor Utara</p>
+                        <a href="#" class="btn-proyek">Lihat Detail</a>
                     </div>
                 </div>
-                 <div class="proyek-item">
-                    <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=1974&auto=format&fit=crop" alt="Rumah Klasik Modern">
-                     <div class="proyek-overlay">
-                        <p>Rumah Klasik Modern, Bandung</p>
+                <div class="proyek-item" data-category="klasik">
+                    <img src="/images/klasik.jpg" alt="Rumah Klasik Bogor">
+                    <div class="proyek-overlay">
+                        <h4>Rumah Klasik</h4>
+                        <p>Bogor Selatan</p>
+                        <a href="#" class="btn-proyek">Lihat Detail</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="testimoni" class="section section-light">
+        <section id="video" class="section section-light animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Video Proyek Kami</h2>
+                <div class="video-grid">
+                    
+                    <div class="video-item">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/TAbCucO3Is0" title="Video Proyek 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/N0TynHzmN1o" title="Video Proyek 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimoni" class="section section-light animate-on-scroll">
             <div class="container">
                 <h2 class="section-title">Apa Kata Klien Kami?</h2>
                 <div class="testimoni-grid">
                     <div class="testimoni-card">
+                        <div class="testimoni-header">
+                            <div class="testimoni-info">
+                                <h4>Bp. Andi & Keluarga</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
                         <p>"Hasilnya melebihi ekspektasi! Tim Konstruksi Impian sangat profesional dan komunikatif selama proses pembangunan. Rumah kami jadi tepat waktu."</p>
-                        <h4>- Bp. Andi & Keluarga</h4>
                     </div>
                     <div class="testimoni-card">
+                        <div class="testimoni-header">
+                            <div class="testimoni-info">
+                                <h4>Ibu Sarah, S.H.</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
                         <p>"Proses renovasi berjalan lancar tanpa kendala berarti. Kualitas pengerjaan sangat rapi dan detail. Sangat direkomendasikan!"</p>
-                        <h4>- Ibu Sarah, S.H.</h4>
                     </div>
                 </div>
             </div>
@@ -165,9 +260,16 @@
 
         <section id="kontak" class="cta-section">
             <div class="container">
-                <h2>Siap Memulai Proyek Anda?</h2>
-                <p>Jangan ragu untuk berbicara dengan tim kami. Klik tombol di bawah untuk jadwal konsultasi dan dapatkan penawaran terbaik dari kami.</p>
-                <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20jasa%20konstruksi%20Anda." class="btn btn-primary btn-large" target="_blank">Hubungi via WhatsApp</a>
+                <div class="cta-content">
+                    <h2>Siap Memulai Proyek Anda?</h2>
+                    <p>Jangan ragu untuk berbicara dengan tim kami. Klik tombol di bawah untuk jadwal konsultasi dan dapatkan penawaran terbaik dari kami.</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/6288291106307?text=Halo%2C%20saya%20tertarik%20dengan%20jasa%20konstruksi%20Anda." class="btn btn-primary btn-large" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+                        </a>
+                        
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -177,18 +279,26 @@
             <div class="footer-about">
                 <h3>Konstruksi Impian</h3>
                 <p>Partner terpercaya dalam membangun dan merenovasi properti Anda dengan standar kualitas tertinggi.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
             <div class="footer-contact">
                 <h3>Info Kontak</h3>
-                <p>Jl. Pembangunan No. 123, Yogyakarta</p>
-                <p>Email: info@konstruksiimpian.com</p>
-                <p>Telepon: (0274) 555-1234</p>
+                <p><i class="fas fa-map-marker-alt"></i> CR7W+8WV Cikeas, Kabupaten Bogor, Jawa Barat</p>
+                <p><i class="fas fa-phone"></i> WhatsApp: 0882-9110-6307</p>
             </div>
-            <div class="footer-social">
-                <h3>Ikuti Kami</h3>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">YouTube</a>
+            <div class="footer-links">
+                <h3>Link Cepat</h3>
+                <ul>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#proyek">Proyek</a></li>
+                    <li><a href="#harga">Harga</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
@@ -196,5 +306,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
